@@ -1,4 +1,5 @@
 https://chatgpt.com
+https://rayfoldings.com/1754142
 https://aternos.org/:ja
 p
 https://zpdic.ziphil.com/dictionary/cir-soran0831
