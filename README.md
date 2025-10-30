@@ -2,6 +2,9 @@ https://chatgpt.com
 https://rayfoldings.com/1754142
 https://aternos.org/:ja
 p
+
+https://www.mediafire.com/file/jxwewlmnam7fm0b/Ymzie_Black.mcpack?dkey=4cicezzbf5g&r=371
+
 https://zpdic.ziphil.com/dictionary/cir-soran0831
 https://www.amazon.co.jp/dp/B00YFHZQ2A
 URL：https://www.microsoft.com/ja-jp/store/b/gift-cards
