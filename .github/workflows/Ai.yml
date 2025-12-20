@@ -1,0 +1,43 @@
+name: Extract CJK frequency list
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate a.txt from b.json
+        run: |
+          jq -r '.words[].entry.form' b.json \
+          | fold -w1 \
+          | grep -P '[\x{3400}-\x{4DBF}\x{4E00}-\x{9FFF}\x{20000}-\x{3134F}]' \
+          | sort \
+          | uniq -c \
+          | sort -nr \
+          > a.txt
+
+      - name: Commit and push a.txt
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add a.txt
+          git pull
+          git commit -m "Update CJK frequency list (auto)"
+          git push
