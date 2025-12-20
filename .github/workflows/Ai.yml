@@ -29,10 +29,6 @@ jobs:
 
       - name: Commit and push a.txt
         run: |
-          if git diff --quiet; then
-            echo "No changes"
-            exit 0
-          fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
