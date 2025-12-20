@@ -1,4 +1,4 @@
-name: Extract CJK frequency list
+name: Extract character frequency list
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
         run: |
           jq -r '.words[].entry.form' b.json \
           | fold -w1 \
-          | grep -P '[\x{3400}-\x{4DBF}\x{4E00}-\x{9FFF}\x{20000}-\x{3134F}]' \
+          | grep -P '[^/]' \
           | sort \
           | uniq -c \
           | sort -nr \
@@ -29,11 +29,11 @@ jobs:
 
       - name: Commit and push a.txt
         run: |
-
+          
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add a.txt
           git pull
-          git commit -m "Update CJK frequency list (auto)"
+          git commit -m "Update character frequency list (auto)"
           git push
