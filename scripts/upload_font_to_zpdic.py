@@ -46,7 +46,7 @@ def safe_action(driver, desc, fn, take_shot=True):
 # ---------- 環境確認 ----------
 USER_ID = os.environ.get("USER_ID")
 PASS = os.environ.get("PASS")
-FONT_PATH = os.path.abspath("downloads/font.ttf")
+FONT_PATH = os.path.abspath("downloads/yeerial.ttf")
 
 if not USER_ID:
     log("WARN", "USER_ID not set in environment")
@@ -147,7 +147,7 @@ try:
     time.sleep(6)
     save_shot(driver, "after_login")
 
-    settings_url = "https://zpdic.ziphil.com/dictionary/2283/settings"
+    settings_url = "https://zpdic.ziphil.com/dictionary/Frand_iore/settings/display"
     safe_action(driver, f"Open settings page {settings_url}", lambda: driver.get(settings_url))
     time.sleep(3)
     save_shot(driver, "settings_page_loaded")
