@@ -60,7 +60,7 @@ https://konnitiwa768.github.io/Astedmm/gensou.html
 https://konnitiwa768.github.io/Kanic-letter/5o.html
 https://konnitiwa768.github.io/Astedmm/Convert.html
 https://konnitiwa768.github.io/Astedmm/Neon.html
-https://konnitiwa768.github.io/Astedmm/wari.html
+https://konnitiwa768.github.io/Astedmm/Em.html
 https://sakaltium.github.io/Kanic-letter/Eb.html
 Raw https://github.com/Konnitiwa768/Astedmm/raw/refs/heads/main/fonts/custom_font3.ttf
 https://zpdic.ziphil.com/dictionary/2283?text=&mode=content&type=part&orderMode=createdDate&orderDirection=descending&ignoreCase=false&enableSuggestions=true&page=0
