@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-FONT_URL = "https://fontstruct.com/fontstructions/download/2728972"
+FONT_URL = "https://fontstruct.com/fontstructions/download/2799130"
 DOWNLOAD_DIR = os.path.abspath("downloads")
 
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
