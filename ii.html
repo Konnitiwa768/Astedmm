@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>極点平面地図変換</title>
+<style>
+  body {
+    background:#f2f2f2;
+    font-family:sans-serif;
+    text-align:center;
+    padding:20px;
+  }
+  canvas {
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    margin-top:10px;
+  }
+  button, input {
+    margin:8px;
+    padding:6px 12px;
+    font-size:14px;
+  }
+</style>
+</head>
+<body>
+
+<h2>極点視点 平面地図（PNGアップロード式）</h2>
+
+<input type="file" accept="image/png" id="upload"><br>
+
+<button onclick="render('north')">北極から見る</button>
+<button onclick="render('south')">南極から見る</button>
+<button onclick="download()">PNGダウンロード</button>
+
+<br>
+<canvas id="canvas" width="600" height="600"></canvas>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let img = new Image();
+
+document.getElementById("upload").addEventListener("change", e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => img.src = reader.result;
+  reader.readAsDataURL(file);
+});
+
+function render(pole) {
+  if (!img.src) return;
+
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  const size = canvas.width;
+  const r = size / 2;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(r, r, r - 5, 0, Math.PI * 2);
+  ctx.clip();
+
+  /*
+    想定：
+    アップロード画像 = 正距円筒図法（横長世界地図）
+    上端=北極 / 下端=南極
+  */
+  if (pole === "north") {
+    ctx.drawImage(
+      img,
+      0, 0, img.width, img.height / 2,
+      0, 0, size, size
+    );
+  } else {
+    ctx.drawImage(
+      img,
+      0, img.height / 2, img.width, img.height / 2,
+      0, 0, size, size
+    );
+  }
+
+  ctx.restore();
+
+  // 枠線
+  ctx.beginPath();
+  ctx.arc(r, r, r - 5, 0, Math.PI * 2);
+  ctx.strokeStyle = "#333";
+  ctx.stroke();
+}
+
+function download() {
+  const a = document.createElement("a");
+  a.download = "polar_map.png";
+  a.href = canvas.toDataURL("image/png");
+  a.click();
+}
+</script>
+
+</body>
+</html>
