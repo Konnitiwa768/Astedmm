@@ -4,6 +4,10 @@ https://www.gothegift.com
 https://rayfoldings.com/1754142
 https://aternos.org/:ja
 p
+
+https://mcraft.fun/?connectPeer=774f1c2f-1099-426e-864e-155c0e67854b&peerVersion=1.18&server=https%3A%2F%2Fp2p.mcraft.fun
+
+
 https://jademin.github.io/aterbot/ https://jademin.github.io/aterbot/
 https://web.blockbench.net
 https://cloud.geny.io/signin
