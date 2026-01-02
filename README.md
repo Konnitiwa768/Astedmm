@@ -1,6 +1,6 @@
 https://chatgpt.com
 あ
-https://konnitiwa768.github.io/Astedmm/el.html
+https://konnitiwa768.github.io/Astedmm/el2.html
 https://mcraft.fun/?connectPeer=cce8fc6c-8143-4b81-90af-f2221d6611ef&peerVersion=1.18&server=https%3A%2F%2Fp2p.mcraft.fun
 
 
