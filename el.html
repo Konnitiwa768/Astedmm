@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>極点正距方位投影</title>
+<style>
+body{
+  background:#111;
+  color:#eee;
+  text-align:center;
+  font-family:sans-serif;
+}
+canvas{
+  background:#000;
+  margin-top:10px;
+}
+button,input{
+  margin:6px;
+}
+</style>
+</head>
+<body>
+
+<h3>極点正距方位投影（本物）</h3>
+
+<input type="file" id="file" accept="image/png"><br>
+<button onclick="render('north')">北極</button>
+<button onclick="render('south')">南極</button>
+<button onclick="download()">PNG保存</button><br>
+
+<canvas id="c" width="600" height="600"></canvas>
+
+<script>
+const canvas = document.getElementById("c");
+const ctx = canvas.getContext("2d");
+let srcImg, srcData;
+
+document.getElementById("file").onchange = e => {
+  const r = new FileReader();
+  r.onload = () => {
+    srcImg = new Image();
+    srcImg.onload = () => {
+      const t = document.createElement("canvas");
+      t.width = srcImg.width;
+      t.height = srcImg.height;
+      const tc = t.getContext("2d");
+      tc.drawImage(srcImg,0,0);
+      srcData = tc.getImageData(0,0,t.width,t.height);
+    };
+    srcImg.src = r.result;
+  };
+  r.readAsDataURL(e.target.files[0]);
+};
+
+function render(pole){
+  if(!srcData) return;
+
+  const w = canvas.width;
+  const h = canvas.height;
+  const r = w/2;
+  const img = ctx.createImageData(w,h);
+
+  for(let y=0;y<h;y++){
+    for(let x=0;x<w;x++){
+      const dx = x - r;
+      const dy = y - r;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if(dist > r) continue;
+
+      const c = dist / r;
+      let lat;
+      if(pole === "north"){
+        lat = 90 - c*90;
+      }else{
+        lat = -90 + c*90;
+      }
+
+      let lon = Math.atan2(dx, -dy) * 180 / Math.PI;
+      if(lon < 0) lon += 360;
+
+      const sx = Math.floor(lon / 360 * srcData.width);
+      const sy = Math.floor((90 - lat) / 180 * srcData.height);
+      const si = (sy*srcData.width + sx)*4;
+      const di = (y*w + x)*4;
+
+      img.data[di]   = srcData.data[si];
+      img.data[di+1] = srcData.data[si+1];
+      img.data[di+2] = srcData.data[si+2];
+      img.data[di+3] = 255;
+    }
+  }
+  ctx.putImageData(img,0,0);
+}
+
+function download(){
+  const a = document.createElement("a");
+  a.download = "polar_projection.png";
+  a.href = canvas.toDataURL();
+  a.click();
+}
+</script>
+
+</body>
+</html>
