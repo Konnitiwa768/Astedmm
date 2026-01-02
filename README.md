@@ -1,6 +1,6 @@
 https://chatgpt.com
 あ
-
+https://konnitiwa768.github.io/Astedmm/iel.html
 https://mcraft.fun/?connectPeer=cce8fc6c-8143-4b81-90af-f2221d6611ef&peerVersion=1.18&server=https%3A%2F%2Fp2p.mcraft.fun
 
 
@@ -44,6 +44,17 @@ https://studio.youtube.com/channel/UC1cph_TJmwIje__lwmVWGsg/editing/profile
 i
 minecraft://komugishomin.aternos.me:59000
 
+
+
+
+
+
+
+
+
+
+
+
 https://www.dropbox.com/1/connect?locale=ja_JP&k=09kznzuyaqjovfe&n=0&api=1&state=oauth2code%3AiRfn3E_N7H8K6TMO-lBiyLJWZwVVjCkH-i7z8b_xB2A%3AS256%3Aoffline&extra_query_params=code_challenge%3DiRfn3E_N7H8K6TMO-lBiyLJWZwVVjCkH-i7z8b_xB2A%26code_challenge_method%3DS256%26token_access_type%3Doffline%26response_type%3Dcode
 https://outlook.live.com
 https://konnitiwa768.github.io/Astedmm/Ti.html
@@ -62,6 +73,7 @@ live at https://konnitiwa768.github.io/Astedmm/A.html
 live at https://konnitiwa768.github.io/Astedmm/A.html
 https://konnitiwa768.github.io/Battle-of-Citium/Zp.html
 https://konnitiwa768.github.io/Astedmm/Jisho.html
+
 https://konnitiwa768.github.io/Astedmm/Reimu.html
 
 https://konnitiwa768.github.io/Astedmm/gensou.html
