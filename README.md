@@ -1,5 +1,9 @@
 https://chatgpt.com
 あ
+
+https://mcraft.fun/?connectPeer=cce8fc6c-8143-4b81-90af-f2221d6611ef&peerVersion=1.18&server=https%3A%2F%2Fp2p.mcraft.fun
+
+
 https://www.gothegift.com
 https://rayfoldings.com/1754142
 https://aternos.org/:ja
