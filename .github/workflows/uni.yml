@@ -1,0 +1,38 @@
+name: Extract character frequency list (Unicode order)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate uni.txt from b.json
+        run: |
+          jq -r '.words[].entry.form' b.json \
+          | perl -CS -pe 's/(.)/\1\n/g' \
+          | grep -v '/' \
+          | sort \
+          | uniq -c \
+          | LC_ALL=C sort -k2,2 \
+          > uni.txt
+
+      - name: Commit and push uni.txt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add uni.txt
+          git pull
+          git commit -m "Update character list (Unicode order, auto)" || exit 0
+          git push
