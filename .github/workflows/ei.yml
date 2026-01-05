@@ -1,0 +1,47 @@
+name: Remove pronunciation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  nopronunciation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate nopronunciation.json
+        run: |
+          PRON_TITLE=$(jq -r '.settings.zpdicOnline.pronunciationTitle // empty' a.json)
+
+          jq --arg pt "$PRON_TITLE" '
+            .words |= map(
+              if .contents then
+                .contents |= map(
+                  if .title == $pt then
+                    .text = ""
+                  else
+                    .
+                  end
+                )
+              else
+                .
+              end
+            )
+          ' a.json > nopronunciation.json
+
+      - name: Commit nopronunciation.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add nopronunciation.json
+          git commit -m "Remove pronunciation texts" || exit 0
+          git push
