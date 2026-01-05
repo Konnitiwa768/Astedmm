@@ -1,4 +1,4 @@
-name: Remove pronunciation field content
+name: Generate nopronunciation.json from a.json
 
 on:
   push:
@@ -14,31 +14,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Generate nopronunciation.json
         run: |
           jq '
-            if type == "array" then
-              map(
-                if has("pronunciation") then
-                  .pronunciation = ""
-                else
-                  .
-                end
-              )
-            else
-              .
-            end
+            .words |= map(
+              if (.entry | has("pronunciation")) then
+                .entry.pronunciation = ""
+              else
+                .
+              end
+            )
           ' a.json > nopronunciation.json
 
       - name: Commit nopronunciation.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           git add nopronunciation.json
-          git pull
-          git commit -m "Clear pronunciation fields" || exit 0
+          git commit -m "Clear entry.pronunciation" || exit 0
           git push
