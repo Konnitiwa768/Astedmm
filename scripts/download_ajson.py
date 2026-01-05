@@ -32,7 +32,7 @@ try:
     time.sleep(5)
 
     # 4. 設定ページ
-    driver.get("https://zpdic.ziphil.com/dictionary/2283/settings/file")
+    driver.get("https://zpdic.ziphil.com/dictionary/Osmenia/settings/file")
     time.sleep(3)
 
     # 5. エクスポートボタン押下
