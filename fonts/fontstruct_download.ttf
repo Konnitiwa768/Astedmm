@@ -17,7 +17,7 @@
 <link rel="icon shortcut" href="/favicon.ico" />
 <link rel="search" href="http://fontstruct.com/search.xml" type="application/opensearchdescription+xml" title="FontStruct.com"/>
 
-    <link href="https://static.fontstruct.com/css/fs/app.css?v=8ccb5c962a177953e5bcc5dbb664aa94" type="text/css" rel="stylesheet"/>
+    <link href="https://static.fontstruct.com/css/fs/app.css?v=1cbeb45f1f3bca8d824107b87ea54b2c" type="text/css" rel="stylesheet"/>
 
 
     
@@ -50,8 +50,8 @@
                         <div class="fs-header__logo">
     <a href="/" title="FontStruct">
         <div class="fs-logo">
-            <img class="fs-logo__image fs-logo__image--desktop" src="https://static.fontstruct.com/images/fontstruct-peace-ani.gif?v=bb9636d0a3fbb923006102a8e06cfc54&p=8bbf83a793c2bcce73ce9790d976d0a9" alt="FontStruct Logo"/>
-            <img class="fs-logo__image fs-logo__image--small" src="https://static.fontstruct.com/images/fontstruct-small.gif?v=bb9636d0a3fbb923006102a8e06cfc54" alt="FontStruct Logo"/>
+            <img class="fs-logo__image fs-logo__image--desktop" src="https://static.fontstruct.com/images/fontstruct-peace-ani.gif?v=cb08a9e551e0a01df8fb128eff70533f&p=8bbf83a793c2bcce73ce9790d976d0a9" alt="FontStruct Logo"/>
+            <img class="fs-logo__image fs-logo__image--small" src="https://static.fontstruct.com/images/fontstruct-small.gif?v=cb08a9e551e0a01df8fb128eff70533f" alt="FontStruct Logo"/>
         </div>
     </a>
 </div>
@@ -107,92 +107,26 @@
 <ins class="adsbygoogle fs-adSense fs-adSense--pending fs-adSense--square1"
      style="display:inline-block;width:200px;height:200px"
      data-ad-client="ca-pub-1278672454438645"
-     data-ad-slot="6575740309"></ins>    <a href="/fontstructions/show/1468128" id="fft-1468128" class="fs-teaser fs-teaser--featured-fontstruction">
+     data-ad-slot="6575740309"></ins>    <a href="/fontstructions/show/1755780" id="fft-1755780" class="fs-teaser fs-teaser--featured-fontstruction">
     
 <style>
-    #fft-1468128 {
+    #fft-1755780 {
         background-size: 200px 200px;
-        background-image: url(https://render.fontstruct.com/renderer/render?v=6a31e4a7&id=1468128&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
+        background-image: url(https://render.fontstruct.com/renderer/render?v=6a03fe90&id=1755780&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
     }
     @media 
         only screen and (-webkit-min-device-pixel-ratio : 1.5),
         only screen and (-o-min-device-pixel-ratio: 3/2),
         only screen and (min--moz-device-pixel-ratio: 1.5),
         only screen and (min-device-pixel-ratio: 1.5) {
-        #fft-1468128 {
-            background-image: url(https://render.fontstruct.com/renderer/render?v=6a31e4a7&id=1468128&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
+        #fft-1755780 {
+            background-image: url(https://render.fontstruct.com/renderer/render?v=6a03fe90&id=1755780&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
         }
     }    
 </style>
     <h1 class="fs-teaser__type">Featured FontStruction</h1>
     <div class="fs-teaser__label">
-    <span class="fs-teaser__label-1">Vembayee</span><span class="fs-teaser__label-2">by naveenchandru</span>
-    </div>
-</a>
-    <a href="/fontstructions/show/2135405" id="fft-2135405" class="fs-teaser fs-teaser--featured-fontstruction">
-    
-<style>
-    #fft-2135405 {
-        background-size: 200px 200px;
-        background-image: url(https://render.fontstruct.com/renderer/render?v=6a3edefe&id=2135405&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
-    }
-    @media 
-        only screen and (-webkit-min-device-pixel-ratio : 1.5),
-        only screen and (-o-min-device-pixel-ratio: 3/2),
-        only screen and (min--moz-device-pixel-ratio: 1.5),
-        only screen and (min-device-pixel-ratio: 1.5) {
-        #fft-2135405 {
-            background-image: url(https://render.fontstruct.com/renderer/render?v=6a3edefe&id=2135405&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
-        }
-    }    
-</style>
-    <h1 class="fs-teaser__type">Featured FontStruction</h1>
-    <div class="fs-teaser__label">
-    <span class="fs-teaser__label-1">KD Ziltemir</span><span class="fs-teaser__label-2">by kassymkulov</span>
-    </div>
-</a>
-    <a href="/fontstructions/show/180699" id="fft-180699" class="fs-teaser fs-teaser--featured-fontstruction">
-    
-<style>
-    #fft-180699 {
-        background-size: 200px 200px;
-        background-image: url(https://render.fontstruct.com/renderer/render?v=68352219&id=180699&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
-    }
-    @media 
-        only screen and (-webkit-min-device-pixel-ratio : 1.5),
-        only screen and (-o-min-device-pixel-ratio: 3/2),
-        only screen and (min--moz-device-pixel-ratio: 1.5),
-        only screen and (min-device-pixel-ratio: 1.5) {
-        #fft-180699 {
-            background-image: url(https://render.fontstruct.com/renderer/render?v=68352219&id=180699&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
-        }
-    }    
-</style>
-    <h1 class="fs-teaser__type">Featured FontStruction</h1>
-    <div class="fs-teaser__label">
-    <span class="fs-teaser__label-1">Escheresk</span><span class="fs-teaser__label-2">by Tobias Sommer (shasta)</span>
-    </div>
-</a>
-    <a href="/fontstructions/show/2154611" id="fft-2154611" class="fs-teaser fs-teaser--featured-fontstruction">
-    
-<style>
-    #fft-2154611 {
-        background-size: 200px 200px;
-        background-image: url(https://render.fontstruct.com/renderer/render?v=69ac661f&id=2154611&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
-    }
-    @media 
-        only screen and (-webkit-min-device-pixel-ratio : 1.5),
-        only screen and (-o-min-device-pixel-ratio: 3/2),
-        only screen and (min--moz-device-pixel-ratio: 1.5),
-        only screen and (min-device-pixel-ratio: 1.5) {
-        #fft-2154611 {
-            background-image: url(https://render.fontstruct.com/renderer/render?v=69ac661f&id=2154611&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
-        }
-    }    
-</style>
-    <h1 class="fs-teaser__type">Featured FontStruction</h1>
-    <div class="fs-teaser__label">
-    <span class="fs-teaser__label-1">STF_REWINDER</span><span class="fs-teaser__label-2">by Sed4tives</span>
+    <span class="fs-teaser__label-1">Elbow Script</span><span class="fs-teaser__label-2">by four</span>
     </div>
 </a>
     <a href="/fontstructions/show/341492" id="fft-341492" class="fs-teaser fs-teaser--featured-fontstruction">
@@ -217,6 +151,72 @@
     <span class="fs-teaser__label-1">allegorica 2.0b</span><span class="fs-teaser__label-2">by William Leverette (will.i.ૐ)</span>
     </div>
 </a>
+    <a href="/fontstructions/show/1653634" id="fft-1653634" class="fs-teaser fs-teaser--featured-fontstruction">
+    
+<style>
+    #fft-1653634 {
+        background-size: 200px 200px;
+        background-image: url(https://render.fontstruct.com/renderer/render?v=6a52d69b&id=1653634&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
+    }
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio : 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min--moz-device-pixel-ratio: 1.5),
+        only screen and (min-device-pixel-ratio: 1.5) {
+        #fft-1653634 {
+            background-image: url(https://render.fontstruct.com/renderer/render?v=6a52d69b&id=1653634&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
+        }
+    }    
+</style>
+    <h1 class="fs-teaser__type">Featured FontStruction</h1>
+    <div class="fs-teaser__label">
+    <span class="fs-teaser__label-1">Zirif</span><span class="fs-teaser__label-2">by mgUdit</span>
+    </div>
+</a>
+    <a href="/fontstructions/show/2136169" id="fft-2136169" class="fs-teaser fs-teaser--featured-fontstruction">
+    
+<style>
+    #fft-2136169 {
+        background-size: 200px 200px;
+        background-image: url(https://render.fontstruct.com/renderer/render?v=699a4a70&id=2136169&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
+    }
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio : 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min--moz-device-pixel-ratio: 1.5),
+        only screen and (min-device-pixel-ratio: 1.5) {
+        #fft-2136169 {
+            background-image: url(https://render.fontstruct.com/renderer/render?v=699a4a70&id=2136169&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
+        }
+    }    
+</style>
+    <h1 class="fs-teaser__type">Featured FontStruction</h1>
+    <div class="fs-teaser__label">
+    <span class="fs-teaser__label-1">Scorpions</span><span class="fs-teaser__label-2">by graphicfever</span>
+    </div>
+</a>
+    <a href="/fontstructions/show/2210300" id="fft-2210300" class="fs-teaser fs-teaser--featured-fontstruction">
+    
+<style>
+    #fft-2210300 {
+        background-size: 200px 200px;
+        background-image: url(https://render.fontstruct.com/renderer/render?v=6a30544f&id=2210300&w=200&h=200&f=0&t=Aa&a=center&s=0.5);
+    }
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio : 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min--moz-device-pixel-ratio: 1.5),
+        only screen and (min-device-pixel-ratio: 1.5) {
+        #fft-2210300 {
+            background-image: url(https://render.fontstruct.com/renderer/render?v=6a30544f&id=2210300&w=400&h=400&f=0&t=Aa&a=center&s=0.5);
+        }
+    }    
+</style>
+    <h1 class="fs-teaser__type">Featured FontStruction</h1>
+    <div class="fs-teaser__label">
+    <span class="fs-teaser__label-1">STF_LEOPOLD Pro (Sans-Regular)</span><span class="fs-teaser__label-2">by Sed4tives</span>
+    </div>
+</a>
 </div>
 
     </div>
@@ -228,7 +228,7 @@
         <div class="fs-footer__wrapper">
             <div class="fs-footer__left">
                                     <a class="fs-small-logo" href="/"><img
-                                src="https://static.fontstruct.com/images/fontstruct-small-logo.png?v=bb9636d0a3fbb923006102a8e06cfc54"/></a>
+                                src="https://static.fontstruct.com/images/fontstruct-small-logo.png?v=cb08a9e551e0a01df8fb128eff70533f"/></a>
                                                             <ul class="fs-service-menu">
                 <li class="first"><a href="https://typo.social/@fontstruct">Typo.Social</a></li>
         <li><a href="/terms">Terms of Use</a></li>
@@ -269,7 +269,7 @@
         };
         var CKEDITOR_BASEPATH = '/js/vendor/ckeditor/';
             </script>
-    <script src="https://static.fontstruct.com/js/fs/app.js?v=84bfebbb6f9535073b1f33e89c9657ed"></script>
+    <script src="https://static.fontstruct.com/js/fs/app.js?v=bf1919ecf33b7aa6e8e6741ac86a0fe8"></script>
 
 </body>
 </html>
